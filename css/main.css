@@ -67,6 +67,7 @@ input:-moz-placeholder {
 	padding: 5px;
 	border-radius: 2px; 
 }
+.arrow { font-size: 75%; }
 
 
 
@@ -113,20 +114,164 @@ input:-moz-placeholder {
 	color: #1b4677;
 	margin-top: 8px;
 }
-.login-container input { 
+.login-container input {
+	width: 155px;
 	height: 28px; 
 	margin: 0px 5px;
 	border: 2px solid #1b4677;
 	padding: 0 5px;
 }
+.login-container img { transform: scale(0.75); }
+
+.content-container {
+	width: 95%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto 35px auto;
+	background: url("../img/globe.png") no-repeat 5% center;
+	background-size: 454px 285px;
+}
+
+#what-we-do {
+	background-color: rgba( 0, 0, 0, 0.6 );
+	min-height: 350px;
+	display: flex;
+}
+#what-we-do .left h1 {
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 72px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	text-align: left;
+	margin-bottom: 10px;
+	padding: 40px 120px 0px 120px;
+	color: #fff;
+}
+
+#what-we-do .left a {
+	text-align: center;
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	font-family: 'Arial';
+	font-size: 22px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px; 
+	padding: 8px 0 7px 0;
+}
+
+#what-we-do .right {
+	width: 40%;
+	border-left: 3px solid #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0px 20px 0px 20px; 
+	height: 280px;
+	margin-top: 30px;
+}
+#what-we-do .right p {
+	color: #fff;
+	font-family: 'Arial';
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+#identity {
+	max-width: 1300px;
+	margin-top: 30px;
+	margin: 30px auto 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 34px;
+	align-items: center;
+}
+
+.identity-left {
+	width: 638px;
+	height: 528px;
+	background: url("../img/identity-left.jpg") no-repeat center center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.identity-left h1 {
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 72px;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.identity-left a {
+	text-align: center;
+	width: 40%;
+	display: block;
+	margin: 0 auto;
+	font-family: 'Arial';
+	font-size: 22px;
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 5px; 
+	padding: 8px 0 7px 0;
+}
+
+.identity-right {
+	width: 638px;
+	height: 528px;
+	background: url("../img/identity-right.jpg") no-repeat center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.identity-right p {
+	border: 3px solid #fff;
+	border-left: none;
+	border-right: none; 
+	text-align: center;
+	padding: 10px 20px;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 24px;
+	color: #fff;
+}
+
+#footer {
+	width: 100%;
+	background-color: #5c8dc6;
+	height: 136px;
+	margin-top: 80px;
+	display: flex;
+    flex-direction: column;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-top: 20px;
+	width: 30%; 
+}
+
+#footer p {
+	width: 30%;
+	font-family: "Arial";
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	margin: 20px auto;
+}
 
 
 
 
-
-
-
-#contact { background-color: #cad1d4;}
+/*#contact { background-color: #cad1d4;}
 .contact-container {
 	background-color: #cad1d4;
 	display: flex;
@@ -213,7 +358,7 @@ span.letter { color: #abb5b9; }
 	font-size: 14px;
 	font-weight: 200;
 
-}
+}*/
 
 @media only screen and (max-width: 1150px) {
 
