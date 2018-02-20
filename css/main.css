@@ -77,6 +77,19 @@ input:-moz-placeholder {
 	background-size: cover;
 	padding: 150px 0;
 }
+.news #hero { 
+	width: 100%; 
+	background: url("../img/hero-news.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.contact #hero { 
+	width: 100%; 
+	background: url("../img/hero-contact.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.contact #hero .hero-text-hidden { color: rgba(50, 50, 50, 0); }
 #hero h1 {
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 72px;
@@ -100,8 +113,9 @@ input:-moz-placeholder {
 	flex-direction: row;
 	justify-content: flex-end;
 	border-bottom: 2px solid #1b4677;
-	padding: 20px;
+	padding: 20px 5% 20px 20px;
 	box-sizing: border-box; 
+	margin: 0 auto;
 }
 #login .login-container {
 	display: flex;
@@ -132,6 +146,31 @@ input:-moz-placeholder {
 	background-size: 454px 285px;
 }
 
+.contact .content-container {
+	width: 95%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto 35px auto;
+	background: url("../img/contact.jpg") no-repeat 5% center;
+	background-size: cover;
+}
+
+.signup .content-container {
+	width: 95%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto 35px auto;
+	background: url("../img/signup.jpg") no-repeat 5% center;
+	background-size: cover;
+}
+
+.news .content-container {
+	background-image: none;
+	margin-top: 30px;
+}
+
+.juicer-feed h1.referral { display: none !important; }
+
 #what-we-do {
 	background-color: rgba( 0, 0, 0, 0.6 );
 	min-height: 350px;
@@ -148,6 +187,8 @@ input:-moz-placeholder {
 	padding: 40px 120px 0px 120px;
 	color: #fff;
 }
+
+.contact #what-we-do .left h1 { text-align: center; }
 
 #what-we-do .left a {
 	text-align: center;
@@ -168,15 +209,17 @@ input:-moz-placeholder {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 0px 20px 0px 20px; 
+	align-items: center;
 	height: 280px;
 	margin-top: 30px;
+	padding-left: 70px;
 }
 #what-we-do .right p {
 	color: #fff;
 	font-family: 'Arial';
 	font-size: 18px;
 	font-weight: lighter;
+	display: block;
 }
 
 #identity {
