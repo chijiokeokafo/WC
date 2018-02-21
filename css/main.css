@@ -250,7 +250,7 @@ input:-moz-placeholder {
 	color: #fff;
 	margin-bottom: 20px;
 }
-.identity-left a {
+.identity-left a.identity-btn {
 	text-align: center;
 	width: 40%;
 	display: block;
@@ -261,6 +261,11 @@ input:-moz-placeholder {
 	border: 2px solid #fff;
 	border-radius: 5px; 
 	padding: 8px 0 7px 0;
+	transition: all 0.15s ease-in-out;
+}
+.identity-left a.identity-btn:hover {
+	background-color: #fff;
+	color: #1b4677;
 }
 
 .identity-right {
@@ -281,6 +286,31 @@ input:-moz-placeholder {
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 24px;
 	color: #fff;
+}
+
+.contact #identity h4 {
+	font-family: 'Arial';
+	font-size: 30px;
+	color: #fff;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 80px;
+}
+.contact #identity .identity-left { 
+	color: #fff; 
+	align-items: left;
+	
+}
+
+.address {
+	display: flex;
+	flex-direction: row;
+	padding-left: 80px;
+}
+.address p {
+	padding-right: 40px;
+	letter-spacing: 2px;
+
 }
 
 #footer {
