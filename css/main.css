@@ -223,34 +223,38 @@ input:-moz-placeholder {
 }
 
 #identity {
-	max-width: 1300px;
-	margin-top: 30px;
-	margin: 30px auto 0 auto;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding: 0 34px;
 	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1300px;
+	/*width: 95%;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto 35px auto;*/
 }
 
 .identity-left {
-	width: 638px;
-	height: 528px;
 	background: url("../img/identity-left.jpg") no-repeat center center;
+	width: 48%;
+	height: 528px;
+	background-size: cover;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
-.identity-left h1 {
+#identity .identity-left h1 {
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 72px;
 	font-weight: 500;
 	text-align: center;
 	color: #fff;
-	margin-bottom: 20px;
+	margin: 0 0 20px 0;
 }
-.identity-left a.identity-btn {
+#identity .identity-left button.identity-btn {
 	text-align: center;
 	width: 40%;
 	display: block;
@@ -262,19 +266,22 @@ input:-moz-placeholder {
 	border-radius: 5px; 
 	padding: 8px 0 7px 0;
 	transition: all 0.15s ease-in-out;
+	background-color: transparent;
 }
-.identity-left a.identity-btn:hover {
+#identity .identity-left button.identity-btn:hover {
 	background-color: #fff;
 	color: #1b4677;
 }
 
 .identity-right {
-	width: 638px;
+	width: 48%;
 	height: 528px;
 	background: url("../img/identity-right.jpg") no-repeat center center;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+    margin-left: 52px;
 }
 
 .identity-right p {

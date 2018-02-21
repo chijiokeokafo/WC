@@ -1,12 +1,11 @@
 .tile-flip {
-  display: block;
-  margin: 0 auto;
-  max-width: 1072px;
+  display: block;/*
+  margin: 0 auto;*/
   width: 100%;
   max-height: 600px;
-  height: 50vw;
+  height: 100%;
   overflow: hidden;
-  background: url("../img/identity-left.jpg") no-repeat center center;
+  /*background: url("../img/identity-left.jpg") no-repeat center center;*/
   cursor: pointer;
   /*max-width: 1300px;
   margin-top: 30px;
@@ -21,8 +20,8 @@
 .flip-container {
   -webkit-perspective: 1000px;
           perspective: 1000px;
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   float: left;
   box-sizing: border-box;
   border: 1px solid #fff;
@@ -83,13 +82,16 @@
   z-index: 2;
   opacity: 1;
   width: 100%;
-  height: 300px;
+  height: 528px;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   /* for firefox 31 */
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .front p {
@@ -113,11 +115,14 @@
 .back {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
-  background-color: rgba(52,195,224,0.8);
+  background-color: transparent;
   width: 100%;
-  height: 300px;
-  display: table;
+  height: 528px;
+  display: flex;
   z-index: 100;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .back p {
@@ -127,7 +132,7 @@
   padding: 0 55px;
   vertical-align: middle;
   color: white;
-  text-align: center;
+  text-align: left;
   line-height: 22px;
 }
 
