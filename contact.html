@@ -19,7 +19,14 @@
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 			<ul class="nav-container">
-				<li><a href="#nav">Services <span class="arrow">▼</span></a></li>
+				<li class="services">
+					Services <span class="arrow">▼</span>
+					<div class="dropdown-content">
+					    <a href="#">Madrid Notifier</a>
+					    <a href="#">Link 2</a>
+					    <a href="#">Link 3</a>
+				    </div>
+				</li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li class="ofa"><a href="signup.html">OPEN FREE ACCOUNT</a></li>
@@ -52,32 +59,59 @@
 		</div>
 		<section id="identity">
 			<div class="identity-left">
-				<h4>WeCrest Ltd</h4>
-				<div class="address">
-					<p><strong>Address:</strong></p>
-					<p>4F, 8 Teheranro-2-gil Gangnam<br />
-					Seoul, Korea<br />
-					06232</p>
-				</div>
-				<div class="address">
-					<p><strong>Phone:</strong></p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;82 10 3224 8560</p>
-				</div>
-				<div class="address">
-					<p><strong>Email:</strong></p>
-					<p>&nbsp;&nbsp;&nbsp;&nbsp;global@wecrest.com</p>
-				</div>
-				
-
-				
-
-						                         
+				<div class="contact-container-left">
+					<h4>WeCrest Ltd</h4>
+					<div class="address">
+						<p><strong>Address:</strong></p>
+						<p>4F, 8 Teheranro-2-gil Gangnam<br />
+						Seoul, Korea<br />
+						06232</p>
+					</div>
+					<div class="address">
+						<p><strong>Phone:</strong></p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;82 10 3224 8560</p>
+					</div>
+					<div class="address">
+						<p><strong>Email:</strong></p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;global@wecrest.com</p>
+					</div>
+				</div>                         
 			</div>
-			<div class="identity-right">
-				<p>We help you stand out from your competitors.
-				We create win-win opportunities, in which all
-				involved parties can synergize and profit.
-				</p>
+			<div class="contact-right">
+				<div class="contact-heading">
+					<h1>Contact form</h1>
+				</div>
+			    <form>
+			    	<div class="form-line">
+			    		<label for="name">Name<span class="red">*</span></label>
+				        <input type="text" id="name"/>
+			    	</div>
+
+    		    	<div class="form-line">
+    		    		<label for="org">Organization<span class="red">*</span></label>
+    			        <input type="text" id="org"/>
+    		    	</div>
+
+    		    	<div class="form-line">
+    		    		<label for="position">Position</label>
+    			        <input type="text" id="position"/>
+    		    	</div>
+
+    		    	<div class="form-line">
+    		    		<label for="phone">Phone</label>
+    			        <input type="text" id="phone"/>
+    		    	</div>
+
+			    	<div class="form-line">
+			    		<label for="email">Email<span class="red">*</span></label>
+			    		<input type="text" id="email"/>
+			    	</div>
+
+			    	<div class="form-line">
+			    		<label for="questions">Question/<br />Comment<span class="red">*</span></label>
+			    		<textarea id="questions" rows="4"/></textarea>
+			    	</div>
+			    </form>
 			</div>
 		</section>
 	</div>

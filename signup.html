@@ -19,7 +19,14 @@
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</div>
 			<ul class="nav-container">
-				<li><a href="#nav">Services <span class="arrow">▼</span></a></li>
+				<li class="services">
+					Services <span class="arrow">▼</span>
+					<div class="dropdown-content">
+					    <a href="#">Madrid Notifier</a>
+					    <a href="#">Link 2</a>
+					    <a href="#">Link 3</a>
+				    </div>
+				</li>
 				<li><a href="news.html">News</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li class="ofa"><a href="signup.html">OPEN FREE ACCOUNT</a></li>
@@ -50,23 +57,45 @@
 				</div>
 			</section>
 		</div>
-		<section id="identity">
-			<div class="identity-left">
-				<h4>WeCrest Ltd</h4>
-				<p>Address:		4F, 8 Teheranro-2-gil Gangnam
-				Seoul, Korea
-				06232
+		<section id="signup-form">
+			<form>
+		    	<div class="form-line">
+		    		<label for="name">Name<span class="red">*</span></label>
+			        <input type="text" id="name"/>
+		    	</div>
 
-Phone:			+82 10 3224 8560
+		    	<div class="form-line">
+		    		<label for="org">Organization<span class="red">*</span></label>
+			        <input type="text" id="org"/>
+		    	</div>
 
-Email:			                                   </p>
-			</div>
-			<div class="identity-right">
-				<p>We help you stand out from your competitors.
-				We create win-win opportunities, in which all
-				involved parties can synergize and profit.
-				</p>
-			</div>
+		    	<div class="form-line">
+		    		<label for="position">Position</label>
+			        <input type="text" id="position"/>
+		    	</div>
+
+		    	<div class="form-line">
+		    		<label for="phone">Phone</label>
+			        <input type="text" id="phone"/>
+		    	</div>
+
+		    	<div class="form-line">
+		    		<label for="email">Email<span class="red">*</span></label>
+		    		<input type="text" id="email"/>
+		    	</div>
+
+		    	<div class="form-line">
+		    		<label for="questions">Jurisdictions in<br />which you offer<br />trademark<br />services<span class="red">*</span></label>
+		    		<textarea id="questions" rows="4"/></textarea>
+		    	</div>
+
+		    	<div class="form-line agreement">
+		    		<input type="checkbox" name="agreement" id="agreement" value="agreement">
+		    		<label for="agreement"><span class="red">*</span> I have read, understand, and agree to the WeCrest General Terms & Conditions.</label>
+		    	</div>
+
+		    	
+		    </form>
 		</section>
 	</div>
 	<section id="footer">

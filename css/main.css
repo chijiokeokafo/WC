@@ -56,7 +56,7 @@ input:-moz-placeholder {
 	font-size: 24px;
 	color: #fff;
 	text-decoration: none;
-	/*margin-top: -60px;*/
+	max-height: 28px;
 }
 #mobile-nav-button {
   display: none;
@@ -69,6 +69,28 @@ input:-moz-placeholder {
 }
 .arrow { font-size: 75%; }
 
+li.services:hover .dropdown-content {
+    display: flex;
+}
+
+li.services .dropdown-content {
+	display: none;
+	position: relative;
+}
+.dropdown-content {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	/*right: 54px;*/
+	padding-top: 40px;
+}
+.dropdown-content * {
+	background-color: #fff;
+	color: #5c8dc6;
+	margin-bottom: 5px;
+	text-align: right;
+	width: 140%;
+}
 
 
 #hero { 
@@ -300,13 +322,12 @@ input:-moz-placeholder {
 	font-size: 30px;
 	color: #fff;
 	text-align: left;
-	margin-bottom: 10px;
+	margin: 0 0 10px 0;
 	padding-left: 80px;
 }
 .contact #identity .identity-left { 
 	color: #fff; 
-	align-items: left;
-	
+	display: flex;
 }
 
 .address {
@@ -317,8 +338,111 @@ input:-moz-placeholder {
 .address p {
 	padding-right: 40px;
 	letter-spacing: 2px;
-
 }
+.contact #identity .contact-right { 
+	width: 48%;
+	height: 528px;
+	display: flex;
+	flex-direction: column;
+    margin-left: 52px;
+    /*border: 1px solid black;*/
+}
+#identity .contact-right .contact-heading {
+	width: 100%;
+	border-bottom: 2px solid #1b4677;
+}
+#identity .contact-right h1 {
+	font-family: 'Arial';
+	font-size: 33px;
+	font-weight: bold;
+	color: #1b4677;
+	margin: 0 0 5px 0;
+}
+.contact #identity .contact-right form {
+	display: flex;
+	flex-direction: column;
+}
+.contact #identity .contact-right form .form-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+.contact #identity .contact-right form .form-line:first-of-type {
+	margin-top: 30px;
+}
+.form-line input {
+	width: 60%;
+	height: 30px;
+	border: 2px solid #1b4677;
+}
+.form-line label {
+	font-family: 'Arial';
+	font-size: 21px;
+	font-weight: bold;
+	color: #1b4677; 
+}
+.form-line textarea {
+	width: 60%;
+    min-height: 110px;
+    border: 2px solid #1b4677;
+}
+.red { color: #ff0000; }
+
+
+
+
+
+
+
+/*SIGNUP PAGE*/
+#signup-form {
+	width: 46%;
+	margin: 0 auto;
+}
+#signup-form form {
+	display: flex;
+	flex-direction: column;
+}
+#signup-form form .form-line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px 0;
+}
+#signup-form .form-line input {
+	width: 60%;
+	height: 30px;
+	border: 2px solid #1b4677;
+}
+#signup-form .form-line label {
+	font-family: 'Arial';
+	font-size: 21px;
+	font-weight: bold;
+	color: #1b4677; 
+}
+#signup-form .form-line textarea {
+	width: 60%;
+    min-height: 110px;
+    border: 2px solid #1b4677;
+}
+#signup-form .red { color: #ff0000; }
+
+#signup-form form .form-line.agreement {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 10px 0 5px 0;
+}
+#signup-form form .form-line.agreement label {
+	font-family: 'Arial';
+	font-size: 16px;
+	font-weight: 100;
+	color: #1b4677; 
+	padding-top: 8px;
+}
+#signup-form form .form-line.agreement input { width: initial; }
+
 
 #footer {
 	width: 100%;
