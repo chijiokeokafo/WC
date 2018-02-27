@@ -61,16 +61,21 @@ input:-moz-placeholder {
 #mobile-nav-button {
   display: none;
 }
-.ofa {
+li.ofa {
 	background-color: #fff;
 	color: #5c8dc6 !important;
-	padding: 5px;
-	border-radius: 2px; 
+	padding: 5px 10px;
+	border-radius: 8px;
+	font-size: 18px; 
+	font-weight: bold;
 }
 .arrow { font-size: 75%; }
 
+li.services { text-align: right; }
+
 li.services:hover .dropdown-content {
     display: flex;
+    align-items: flex-end;
 }
 
 li.services .dropdown-content {
@@ -135,14 +140,21 @@ li.services .dropdown-content {
 	flex-direction: row;
 	justify-content: flex-end;
 	border-bottom: 2px solid #1b4677;
-	padding: 20px 5% 20px 20px;
+	padding: 20px 0;
 	box-sizing: border-box; 
+	margin: 0 auto;
+	width: 100%;
+}
+#login .wrangler {
+	width: 95%;
+	max-width: 1300px;
 	margin: 0 auto;
 }
 #login .login-container {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: flex-end;
+	
 }
 .login-container p {
 	font-family: 'Arial';
@@ -157,7 +169,11 @@ li.services .dropdown-content {
 	border: 2px solid #1b4677;
 	padding: 0 5px;
 }
-.login-container img { transform: scale(0.75); }
+.login-container img { 
+	transform: scale(0.75); 
+	width: 28px;
+    height: 30px;
+}
 
 .content-container {
 	width: 95%;
@@ -188,7 +204,7 @@ li.services .dropdown-content {
 
 .news .content-container {
 	background-image: none;
-	margin-top: 30px;
+	margin-top: 0;
 }
 
 .juicer-feed h1.referral { display: none !important; }
@@ -198,6 +214,14 @@ li.services .dropdown-content {
 	min-height: 350px;
 	display: flex;
 }
+#what-we-do .left {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 120px;
+}
+.no-margin-bottom { margin-bottom: 20px; margin-top: 0; }
 #what-we-do .left h1 {
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 72px;
@@ -205,8 +229,8 @@ li.services .dropdown-content {
 	font-variant: normal;
 	font-weight: 500;
 	text-align: left;
-	margin-bottom: 10px;
-	padding: 40px 120px 0px 120px;
+	/*margin-bottom: 10px;*/
+	
 	color: #fff;
 }
 
@@ -214,7 +238,7 @@ li.services .dropdown-content {
 
 #what-we-do .left a {
 	text-align: center;
-	width: 40%;
+	width: 60%;
 	display: block;
 	margin: 0 auto;
 	font-family: 'Arial';
@@ -223,6 +247,11 @@ li.services .dropdown-content {
 	border: 2px solid #fff;
 	border-radius: 5px; 
 	padding: 8px 0 7px 0;
+	transition: all 0.15s ease-in-out;
+}
+#what-we-do .left a:hover {
+	background-color: #fff;
+	color: rgba( 0, 0, 0, 0.6 );
 }
 
 #what-we-do .right {
@@ -245,12 +274,11 @@ li.services .dropdown-content {
 }
 
 #identity {
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	width: 95%;
 	margin: 0 auto;
 	max-width: 1300px;
 	/*width: 95%;
