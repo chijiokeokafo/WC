@@ -95,6 +95,7 @@ li.services .dropdown-content {
 	margin-bottom: 5px;
 	text-align: right;
 	width: 140%;
+	padding-right: 5px;
 }
 
 
@@ -171,8 +172,9 @@ li.services .dropdown-content {
 }
 .login-container img { 
 	transform: scale(0.75); 
-	width: 28px;
+	width: 30px;
     height: 30px;
+    margin-top: 1px;
 }
 
 .content-container {
