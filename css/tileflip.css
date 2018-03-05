@@ -49,14 +49,14 @@
           backface-visibility: hidden;
 }
 
-.flipper:before {
+/*.flipper:before {
   content: url('images/plus-btn.png');
   position: absolute;
   top: 0;
   left: 0;
   width: 22px;
   height: 22px;
-}
+}*/
 
 /* hide back of pane during swap */
 .front, .back {
@@ -69,14 +69,14 @@
 }
 
 /* front pane, placed above back */
-.front:before {
+/*.front:before {
   content: url('images/plus-btn.png');
   position: absolute;
   top: 0;
   left: 0;
   width: 22px;
   height: 22px;
-}
+}*/
 
 .front {
   z-index: 2;
@@ -136,11 +136,11 @@
   line-height: 22px;
 }
 
-.back:before {
+/*.back:before {
   content: url('images/minus-btn.png');
   position: absolute;
   top: 0;
   left: 0;
   width: 22px;
   height: 22px;
-}
+}*/

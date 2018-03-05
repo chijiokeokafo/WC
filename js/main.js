@@ -1,7 +1,19 @@
 $(document).ready(function(){
 
+  
+
+  // $(document).click(function(e) {
+  //   if ($(".nav-container").hasClass("nav-open")) {
+  //     $(".nav-container").removeClass("nav-open");
+  //   }
+  // });
+
   $("#mobile-nav-button").click(function(e) {
       $(".nav-container").toggleClass("nav-open"); 
+  });
+
+  $(".mobile-close").click(function(e) {
+      $(".nav-container").removeClass("nav-open"); 
   });
 
   // $("ul.nav-container").find("a").click(function(e) {
