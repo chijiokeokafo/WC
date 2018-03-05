@@ -216,6 +216,7 @@ hr.mobile { display: none; }
 	margin-top: 30px;
     padding: 0 70px;
 }
+.spacer-mobile { display: none; }
 #what-we-do .right p {
 	color: #fff;
 	font-family: 'Arial';
@@ -692,16 +693,13 @@ span.letter { color: #abb5b9; }
 
 	.content-container { background-position: center 10%; }
 
-	#what-we-do {
-		flex-direction: column;
+	#what-we-do { 
+		flex-direction: column; 
+		padding-bottom: 30px;
 	}
 	#what-we-do .left, 
-	#what-we-do .right {
-		width: 100%;
-	}
-	#what-we-do .left {
-		padding: 100px 0 0 0;
-	}
+	#what-we-do .right { width: 100%; }
+	#what-we-do .left { padding: 100px 0 0 0; }
 	#what-we-do .left h1 { 
 		font-size: 55px; 
 		margin-top: 0.83em;
@@ -721,7 +719,12 @@ span.letter { color: #abb5b9; }
 		border: none;
 		/*border-top: 3px solid #fff;*/
 		padding: 20px;
-		margin-top: 0;
+		margin-top: 40px;
+	}
+	.spacer-mobile {
+		display: block;
+		width: 100%;
+		height: 20px;
 	}
 	#what-we-do .right p { 
 		margin-top: 0; 
@@ -770,7 +773,10 @@ span.letter { color: #abb5b9; }
 	/*FOOTER*/
 
 	.icons { width: 80%; }
-	#footer { margin-top: 50px; }
+	#footer { 
+		margin-top: 50px; 
+	    padding-top: 30px;
+	}
 	#footer p { width: 80%; }
 }
 
