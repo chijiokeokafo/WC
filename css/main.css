@@ -172,7 +172,7 @@ li.services .dropdown-content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 120px;
+    padding: 20px 90px;
     width: 50%;
     box-sizing: border-box;
 }
@@ -214,7 +214,7 @@ hr.mobile { display: none; }
 	align-items: center;
 	height: 280px;
 	margin-top: 30px;
-	padding-left: 70px;
+    padding: 0 70px;
 }
 #what-we-do .right p {
 	color: #fff;
@@ -606,13 +606,18 @@ span.letter { color: #abb5b9; }
 
 	#nav img { width: 250px; }
 	.nav-container li { margin: 0 10px; }
-	#what-we-do .left { width: 28%; }
+	#what-we-do .left { width: 50%; }
+	#what-we-do .left h1 { font-size: 60px; }
 	#what-we-do .right {
 		padding: 20px;
 		margin: 15px 0;
 	}
 	#what-we-do .right p { font-size: 16px; }
 
+}
+@media only screen and (max-width: 1000px) {
+	.nav-container { margin: 70px 12px 0 0; }
+	.nav-container li { font-size: 18px; }
 }
 
 
