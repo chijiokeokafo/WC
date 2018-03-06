@@ -30,7 +30,7 @@ input:-moz-placeholder {
 /*NAV*/
 
 #nav { 
-	height: 135px; 
+	height: 75px; 
 	display: flex;
 	justify-content: space-between;
 	background-color: #5c8dc6;
@@ -38,13 +38,13 @@ input:-moz-placeholder {
 	margin-bottom: 10px;
 }
 #nav img {
-	width: 300px;
-	margin: 32px 50px;
+	width: 200px;
+    margin: 15px 50px;
 }
 .nav-container {
-	align-self: flex-start;
+	align-items: center;
 	list-style: none;
-	margin: 70px 50px 0 0;
+	margin: 0 50px 0 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end ;
@@ -52,7 +52,7 @@ input:-moz-placeholder {
 .nav-container li {
 	margin: 0 30px;
 	font-family: 'Arial';
-	font-size: 24px;
+	font-size: 20px;
 	color: #fff;
 	text-decoration: none;
 	max-height: 28px;
@@ -350,6 +350,7 @@ hr.mobile { display: none; }
 .address p {
 	padding-right: 40px;
 	letter-spacing: 2px;
+	font-family: 'Arial';
 }
 .contact #identity .contact-right { 
 	width: 48%;
@@ -474,9 +475,13 @@ hr.mobile { display: none; }
 	padding-top: 20px;
 	width: 30%; 
 }
+.icons img {
+	width: 50px;
+}
+
 
 #footer p {
-	width: 30%;
+	width: 50%;
 	font-family: "Arial";
 	font-size: 14px;
 	color: #fff;

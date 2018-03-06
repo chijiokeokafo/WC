@@ -128,6 +128,7 @@
 .back p {
   display: table-cell;
   vertical-align: middle;
+  font-family: 'Arial';
   font-size: 18px;
   padding: 0 55px;
   vertical-align: middle;
