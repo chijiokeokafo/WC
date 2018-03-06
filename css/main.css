@@ -746,7 +746,7 @@ span.letter { color: #abb5b9; }
 		margin-bottom: 35px;
 		height: 400px;
 	}
-	#identity .front { height: 400px; }
+	#identity .front { height: 528px; }
 	#identity .identity-left h1 { font-size: 52px; }
 	#identity .identity-right {
 		width: 100%;
@@ -762,7 +762,8 @@ span.letter { color: #abb5b9; }
 	}
 
 	/*CONTACT*/
-
+	
+	.contact .content-container { background-position: 35% top; }
 	.contact .left h1 { text-align: center !important; }
 	.contact #identity h4 { padding-left: 40px; }
 	.address { padding-left: 40px; }
@@ -787,7 +788,7 @@ span.letter { color: #abb5b9; }
 
 	.icons { width: 80%; }
 	#footer { 
-		margin-top: 50px; 
+		margin-top: 70px; 
 	    padding-top: 30px;
 	}
 	#footer p { width: 80%; }
@@ -795,7 +796,7 @@ span.letter { color: #abb5b9; }
 		width: 90%;
 		font-size: 13px;
 		line-height: 17px;
-		margin: 40px auto;
+		margin: 40px auto 20px auto;
 	}
 }
 
