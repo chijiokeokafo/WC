@@ -746,7 +746,9 @@ span.letter { color: #abb5b9; }
 		margin-bottom: 35px;
 		height: 400px;
 	}
-	#identity .front { height: 528px; }
+	#identity .tile-flip,
+	#identity .back,
+	#identity .front { height: 400px; }
 	#identity .identity-left h1 { font-size: 52px; }
 	#identity .identity-right {
 		width: 100%;
