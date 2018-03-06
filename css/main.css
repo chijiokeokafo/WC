@@ -479,14 +479,19 @@ hr.mobile { display: none; }
 	width: 50px;
 }
 
-
-#footer p {
+#footer .footer-details {
 	width: 50%;
 	font-family: "Arial";
 	font-size: 14px;
 	color: #fff;
 	text-align: center;
 	margin: 20px auto;
+}
+.footer-details img {
+	width: 137px;
+	height: 14px;
+	position: relative;
+	top: 3px;
 }
 
 
@@ -773,7 +778,10 @@ span.letter { color: #abb5b9; }
 	/*SIGNUP*/
 
 	#signup-form { width: 95%; }
-	#signup-form .form-line label { font-size: 18px; }
+	#signup-form .form-line label { font-size: 16px; }
+	.signup .content-container { background-position: 46.75% center; }
+	#signup-form form .form-line.agreement input { width: 23px; }
+	#signup-form form .form-line.agreement label { text-align: right; }
 
 	/*FOOTER*/
 
@@ -783,6 +791,12 @@ span.letter { color: #abb5b9; }
 	    padding-top: 30px;
 	}
 	#footer p { width: 80%; }
+	#footer .footer-details {
+		width: 90%;
+		font-size: 13px;
+		line-height: 17px;
+		margin: 40px auto;
+	}
 }
 
 
