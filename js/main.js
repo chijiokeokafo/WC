@@ -12,9 +12,9 @@ $(document).ready(function(){
       $(".nav-container").toggleClass("nav-open"); 
   });
 
-  $(".mobile-close").click(function(e) {
-      $(".nav-container").removeClass("nav-open"); 
-  });
+  // $(".mobile-close").click(function(e) {
+  //     $(".nav-container").removeClass("nav-open"); 
+  // });
 
   // $("ul.nav-container").find("a").click(function(e) {
   //     e.preventDefault();

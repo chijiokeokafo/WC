@@ -128,11 +128,11 @@
 
 .back p {
   font-family: 'Arial';
-  font-size: 17px;
+  font-size: 18px;
   width: 90%;
   color: #fff;
   text-align: left;
-  line-height: 22px;
+  /*line-height: 22px;*/
   align-self: center;
   vertical-align: middle;
 }
