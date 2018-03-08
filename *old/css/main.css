@@ -5,9 +5,9 @@ body {
 	margin: 0;
 }
 
-h1, p, li { font-family: 'Lato', sans-serif; }
-
-p { line-height: 25px; }
+h1, p, li {
+	font-family: 'Lato', sans-serif;
+}
 
 a {
 	text-decoration: none;
@@ -25,26 +25,27 @@ input:-moz-placeholder {
 	opacity: 0.5;
 }
 
-.container { width: 100%; }
-
-/*NAV*/
+.container {
+	width: 100%;
+	/*max-width: 1250px;*/
+}
 
 #nav { 
-	height: 60px; 
+	height: 135px; 
 	display: flex;
 	justify-content: space-between;
 	background-color: #5c8dc6;
 	width: 100%;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 #nav img {
-	width: 180px;
-    margin: 10px 50px;
+	width: 300px;
+	margin: 32px 50px;
 }
 .nav-container {
-	align-items: center;
+	align-self: flex-start;
 	list-style: none;
-	margin: 0 50px 0 0;
+	margin: 70px 50px 0 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end ;
@@ -52,7 +53,7 @@ input:-moz-placeholder {
 .nav-container li {
 	margin: 0 30px;
 	font-family: 'Arial';
-	font-size: 18px;
+	font-size: 24px;
 	color: #fff;
 	text-decoration: none;
 	max-height: 28px;
@@ -60,24 +61,23 @@ input:-moz-placeholder {
 #mobile-nav-button {
   display: none;
 }
-.mobile-close { display: none; }
-div.ofa,
 li.ofa {
 	background-color: #fff;
 	color: #5c8dc6 !important;
 	padding: 5px 10px;
 	border-radius: 8px;
-	font-size: 16px; 
+	font-size: 18px; 
 	font-weight: bold;
-	text-transform: uppercase;
 }
-div.ofa { display: none; }
 .arrow { font-size: 75%; }
+
 li.services { text-align: right; }
+
 li.services:hover .dropdown-content {
     display: flex;
     align-items: flex-end;
 }
+
 li.services .dropdown-content {
 	display: none;
 	position: relative;
@@ -98,7 +98,42 @@ li.services .dropdown-content {
 	padding-right: 5px;
 }
 
-/*LOGIN*/
+
+#hero { 
+	width: 100%; 
+	background: url("../img/hero-desktop.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.news #hero { 
+	width: 100%; 
+	background: url("../img/hero-news.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.contact #hero { 
+	width: 100%; 
+	background: url("../img/hero-contact.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 150px 0;
+}
+.contact #hero .hero-text-hidden { color: rgba(50, 50, 50, 0); }
+#hero h1 {
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 72px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	text-align: center;
+	color: #fff;
+	/*line-height: 26.4px;*/
+}
+
+#hero img { 
+	width: 100%;
+	display: block;
+}
+#hero img.mobile-hero { display: none; }
 
 #login {
 	height: 74px;
@@ -126,7 +161,7 @@ li.services .dropdown-content {
 	font-family: 'Arial';
 	font-size: 15px;
 	color: #1b4677;
-	margin-top: 4px;
+	margin-top: 8px;
 }
 .login-container input {
 	width: 155px;
@@ -136,25 +171,12 @@ li.services .dropdown-content {
 	padding: 0 5px;
 }
 .login-container img { 
-	/*transform: scale(0.75); */
-	width: 25px;
-    height: 25px;
-    margin-top: 3px;
+	transform: scale(0.75); 
+	width: 30px;
+    height: 30px;
+    margin-top: 1px;
 }
 
-/*HOMEPAGE*/
-
-#hero { 
-	width: 100%; 
-	background: url("../img/hero-desktop.jpg") no-repeat center center;
-	background-size: cover;
-	padding: 90px 0;
-}
-#hero img { 
-	width: 100%;
-	display: block;
-}
-#hero img.mobile-hero { display: none; }
 .content-container {
 	width: 95%;
 	max-width: 1300px;
@@ -163,6 +185,32 @@ li.services .dropdown-content {
 	background: url("../img/globe.png") no-repeat 5% center;
 	background-size: 454px 285px;
 }
+
+.contact .content-container {
+	width: 95%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto 35px auto;
+	background: url("../img/contact.jpg") no-repeat 5% center;
+	background-size: cover;
+}
+
+.signup .content-container {
+	width: 95%;
+	max-width: 1300px;
+	display: block;
+	margin: 0 auto 35px auto;
+	background: url("../img/signup.jpg") no-repeat 5% center;
+	background-size: cover;
+}
+
+.news .content-container {
+	background-image: none;
+	margin-top: 0;
+}
+
+.juicer-feed h1.referral { display: none !important; }
+
 #what-we-do {
 	background-color: rgba( 0, 0, 0, 0.6 );
 	min-height: 350px;
@@ -173,9 +221,7 @@ li.services .dropdown-content {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 20px 90px;
-    width: 50%;
-    box-sizing: border-box;
+    padding: 20px 120px;
 }
 .no-margin-bottom { margin-bottom: 20px; margin-top: 0; }
 #what-we-do .left h1 {
@@ -185,9 +231,13 @@ li.services .dropdown-content {
 	font-variant: normal;
 	font-weight: 500;
 	text-align: left;
-	/*margin-bottom: 10px;*/	
+	/*margin-bottom: 10px;*/
+	
 	color: #fff;
 }
+
+.contact #what-we-do .left h1 { text-align: center; }
+
 #what-we-do .left a {
 	text-align: center;
 	width: 60%;
@@ -205,9 +255,9 @@ li.services .dropdown-content {
 	background-color: #fff;
 	color: rgba( 0, 0, 0, 0.6 );
 }
-hr.mobile { display: none; }
+
 #what-we-do .right {
-	width: 50%;
+	width: 40%;
 	border-left: 3px solid #fff;
 	display: flex;
 	flex-direction: column;
@@ -215,16 +265,16 @@ hr.mobile { display: none; }
 	align-items: center;
 	height: 280px;
 	margin-top: 30px;
-    padding: 0 70px;
+	padding-left: 70px;
 }
-.spacer-mobile { display: none; }
 #what-we-do .right p {
 	color: #fff;
 	font-family: 'Arial';
-	font-size: 16px;
+	font-size: 18px;
 	font-weight: lighter;
 	display: block;
 }
+
 #identity {
 	display: flex;
 	flex-direction: row;
@@ -233,7 +283,12 @@ hr.mobile { display: none; }
 	width: 95%;
 	margin: 0 auto;
 	max-width: 1300px;
+	/*width: 95%;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto 35px auto;*/
 }
+
 .identity-left {
 	background: url("../img/identity-left.jpg") no-repeat center center;
 	width: 48%;
@@ -269,6 +324,7 @@ hr.mobile { display: none; }
 	background-color: #fff;
 	color: #1b4677;
 }
+
 .identity-right {
 	width: 48%;
 	height: 528px;
@@ -279,6 +335,7 @@ hr.mobile { display: none; }
 	justify-content: center;
     margin-left: 52px;
 }
+
 .identity-right p {
 	border: 3px solid #fff;
 	border-left: none;
@@ -290,47 +347,6 @@ hr.mobile { display: none; }
 	color: #fff;
 }
 
-/*NEWS*/
-
-.news #hero { 
-	width: 100%; 
-	background: url("../img/hero-news.jpg") no-repeat center center;
-	background-size: cover;
-	padding: 90px 0;
-}
-.news .content-container {
-	background-image: none;
-	margin-top: 0;
-}
-.juicer-feed h1.referral { display: none !important; }
-
-/*CONTACT*/
-
-.contact #hero { 
-	width: 100%; 
-	background: url("../img/hero-contact.jpg") no-repeat center center;
-	background-size: cover;
-	padding: 90px 0;
-}
-.contact #hero .hero-text-hidden { color: rgba(50, 50, 50, 0); }
-#hero h1 {
-	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-	font-size: 68px;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 500;
-	text-align: center;
-	color: #fff;
-}
-.contact .content-container {
-	width: 95%;
-	max-width: 1300px;
-	display: block;
-	margin: 0 auto 35px auto;
-	background: url("../img/contact.jpg") no-repeat 5% center;
-	background-size: cover;
-}
-.contact #what-we-do .left h1 { text-align: center; }
 .contact #identity h4 {
 	font-family: 'Arial';
 	font-size: 30px;
@@ -343,6 +359,7 @@ hr.mobile { display: none; }
 	color: #fff; 
 	display: flex;
 }
+
 .address {
 	display: flex;
 	flex-direction: row;
@@ -351,7 +368,6 @@ hr.mobile { display: none; }
 .address p {
 	padding-right: 40px;
 	letter-spacing: 2px;
-	font-family: 'Arial';
 }
 .contact #identity .contact-right { 
 	width: 48%;
@@ -359,6 +375,7 @@ hr.mobile { display: none; }
 	display: flex;
 	flex-direction: column;
     margin-left: 52px;
+    /*border: 1px solid black;*/
 }
 #identity .contact-right .contact-heading {
 	width: 100%;
@@ -381,7 +398,9 @@ hr.mobile { display: none; }
 	justify-content: space-between;
 	margin: 5px 0;
 }
-.contact #identity .contact-right form .form-line:first-of-type { margin-top: 30px; }
+.contact #identity .contact-right form .form-line:first-of-type {
+	margin-top: 30px;
+}
 .form-line input {
 	width: 60%;
 	height: 30px;
@@ -400,16 +419,13 @@ hr.mobile { display: none; }
 }
 .red { color: #ff0000; }
 
-/*SIGNUP PAGE*/
 
-.signup .content-container {
-	width: 95%;
-	max-width: 1300px;
-	display: block;
-	margin: 0 auto 35px auto;
-	background: url("../img/signup.jpg") no-repeat 5% center;
-	background-size: cover;
-}
+
+
+
+
+
+/*SIGNUP PAGE*/
 #signup-form {
 	width: 46%;
 	margin: 0 auto;
@@ -441,6 +457,7 @@ hr.mobile { display: none; }
     border: 2px solid #1b4677;
 }
 #signup-form .red { color: #ff0000; }
+
 #signup-form form .form-line.agreement {
 	display: flex;
 	flex-direction: row;
@@ -456,7 +473,6 @@ hr.mobile { display: none; }
 }
 #signup-form form .form-line.agreement input { width: initial; }
 
-/*FOOTER*/
 
 #footer {
 	width: 100%;
@@ -474,29 +490,16 @@ hr.mobile { display: none; }
 	justify-content: space-around;
 	margin: 0 auto;
 	padding-top: 20px;
-	width: 350px; 
-}
-.icons img {
-	width: 50px;
+	width: 30%; 
 }
 
-#footer .footer-details {
-	width: 50%;
-	/*font-family: "Arial";*/
-	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+#footer p {
+	width: 30%;
+	font-family: "Arial";
 	font-size: 14px;
 	color: #fff;
 	text-align: center;
 	margin: 20px auto;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 100;
-}
-.footer-details img {
-	width: 137px;
-	height: 14px;
-	position: relative;
-	top: 3px;
 }
 
 
@@ -591,253 +594,35 @@ span.letter { color: #abb5b9; }
 
 }*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1150px) {
 
-	#nav img { width: 250px; }
-	.nav-container li { margin: 0 10px; }
-	#what-we-do .left { width: 50%; }
-	#what-we-do .left h1 { font-size: 60px; }
-	#what-we-do .right {
-		padding: 20px;
-		margin: 15px 0;
-	}
-	#what-we-do .right p { font-size: 16px; }
+	.lawyers-container h1 { font-size: 34px; }
+	.lawyer-details { width: 46%; }
 
-}
-@media only screen and (max-width: 1000px) {
-	.nav-container { margin: 70px 12px 0 0; }
-	.nav-container li { font-size: 18px; }
-}
-
-
-@media only screen and (max-width: 800px) {
-
-	/*HOME*/
-
-	#nav { 
-		height: 80px; 
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-around;
-		padding: 0 10px;
-		width: 100%;
-	    box-sizing: border-box;
-	}
-	.nav-container {
-	    position: absolute;
-        display: block;
-        margin: 0 0px 10px 10px;
-        z-index: 1000;
-        top: 100px;
-        right: 0;
-        padding: 0;
-        height: 0px;
-        background-color: green;
-        width: 100%;
-        opacity: 1;
-        overflow-x: hidden;
-	    transition: all 0.25s ease-in;
-	    text-align: center;
-	    background-color: transparent;
-	    
-	}
-	.nav-container li {
-		height: 19%;
-		padding-top: 13px; 
-		margin: 0 0 5px 0;
-		color: #5c8dc6;
-		background-color: #fff;
-	}
-	li.services { text-align: center; }
-	#nav img {
-	    margin: 0;
-	    display: block;
-		width: 250px;
-	}
-	li.ofa {
-		border-radius: 0px;
-		font-weight: normal;
-		text-transform: capitalize;
-	}
-	div#mobile-nav-button {
-	  display: flex;
-	  text-align: left;
-	  /*padding: 0 0px 20px 20px;*/
-	  font-size: 200%;
-	  color: #fff;
-	}
-	.nav-open { 
-		height: 195px;
-	}
-	#nav .logo img { width: 120px; }
-
-	/*div.ofa {
-		background-color: #fff;
-		padding: 2px 5px;
-		font-size: 12px; 
-		font-family: 'Arial';
-	}*/
-	/*div.ofa { display: block; }*/
-	/*li.ofa { display: none; }*/
-	.dropdown-content { padding-top: 0; }
-	.mobile-close { display: block; }
-	/*.container { margin-top: -20px; }*/
-
-	#hero h1 { font-size: 50px; }
-
-	#login .login-container { justify-content: center; }
-	.login-container input { width: 110px; }
-
-	.content-container { background-position: center 10%; }
-
-	#what-we-do { 
-		flex-direction: column; 
-		padding-bottom: 30px;
-		height: 730px;
-	}
-	#what-we-do .left, 
-	#what-we-do .right { width: 100%; }
-	#what-we-do .left { padding: 100px 0 0 0; }
-	#what-we-do .left h1 { 
-		font-size: 55px; 
-		margin-top: 0.83em;
-	}
-	#what-we-do .left a {
-		width: 260px;
-		margin-bottom: 20px;
-		font-size: 20px;
-	}
-	hr.mobile {
-		display: block;
-		width: 280px;
-		border: 1.5px solid #fff;
-	}
-	#what-we-do .right {
-		box-sizing: border-box;
-		border: none;
-		/*border-top: 3px solid #fff;*/
-		padding: 20px;
-		margin-top: 80px;
-	}
-	.spacer-mobile {
-		display: block;
-		width: 100%;
-		height: 20px;
-	}
-	#identity .identity-left button.identity-btn { width: 55%; }
-	#what-we-do .right p { 
-		margin-top: 0; 
-		/*line-height: 23px;*/
-	}
-	#identity { flex-direction: column; }
-	#identity .identity-left	{
-		width: 100%;
-		margin-bottom: 35px;
-		height: 440px;
-	}
-	#identity .tile-flip,
-	#identity .back,
-	#identity .front { height: 440px; }
-	#identity .identity-left h1 { font-size: 52px; }
-	#identity .identity-right {
-		width: 100%;
-		margin-left: 0;
-		height: 440px;
-	}
-	#identity .identity-right p { font-size: 20px; }
-
-	/*NEWS*/
-
-	.news .hero-text {
-		font-size: 50px;
-	}
-
-	/*CONTACT*/
-	
-	.contact .content-container { background-position: 35% top; }
-	.contact .left h1 { text-align: center !important; }
-	.contact #identity h4 { padding-left: 40px; }
-	.address { padding-left: 40px; }
-	.contact #identity .contact-right {
-		width: 100%;
-		margin-left: 0; 
-	}
-	#identity .contact-right h1 { font-size: 25px; }
-	.form-line label { font-size: 18px; }
-	.form-line input,
-	.form-line textarea { width: 64; }
-	
-	/*SIGNUP*/
-
-	#signup-form { width: 95%; }
-	#signup-form .form-line label { font-size: 16px; }
-	.signup .content-container { background-position: 46.75% center; }
-	#signup-form form .form-line.agreement input { width: 23px; }
-	#signup-form form .form-line.agreement label { text-align: right; }
-
-	/*FOOTER*/
-
-	.icons { width: 80%; }
-	#footer { 
-		margin-top: 70px; 
-	    padding-top: 30px;
-	}
-	#footer p { width: 80%; }
-	#footer .footer-details {
-		width: 90%;
-		font-size: 13px;
-		line-height: 17px;
-		margin: 40px auto 20px auto;
-	}
+	#footer { height: 220px; }
+    .footer-top {
+    	display: block;
+    	margin: 0px 50px;
+    } 
+    .footer-top p.desktop { display: none; }
+    .footer-top p.mobile { display: block; }
+    .footer-bottom {
+        width: 600px;
+    }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 950px) {
+	.lawyers-container h1 { 
+		font-size: 28px; 
+		max-width: 260px;
+	}
+	.lawyer-details { width: 57%; }
+}
 
 @media only screen and (max-width: 750px) {
 
-/*	html { overflow-x: hidden; }
+	html { overflow-x: hidden; }
 
 	#nav { 
 		height: auto; 
@@ -927,7 +712,7 @@ span.letter { color: #abb5b9; }
 		margin: 5px 0;
 		font-size: 78%;
 		letter-spacing: 1px;
-	}*/
+	}
 }
 
 @media only screen and (max-width: 450px) {
