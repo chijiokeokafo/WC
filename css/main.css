@@ -620,7 +620,7 @@ span.letter { color: #abb5b9; }
 
 @media only screen and (max-width: 1150px) {
 
-	#nav img { width: 250px; }
+	#nav img { width: 180px; }
 	.nav-container li { margin: 0 10px; }
 	#what-we-do .left { width: 50%; }
 	#what-we-do .left h1 { font-size: 60px; }
@@ -632,7 +632,7 @@ span.letter { color: #abb5b9; }
 
 }
 @media only screen and (max-width: 1000px) {
-	.nav-container { margin: 70px 12px 0 0; }
+	.nav-container { margin: 0 12px 0 0; }
 	.nav-container li { font-size: 18px; }
 }
 
