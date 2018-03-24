@@ -5,7 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WeCrest</title>
 	<link rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="css/tileflip.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.css" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 </head>
 <body>
@@ -34,12 +35,38 @@
 				<li class="ofa"><a href="signup.html">open free account</a></li>
 			</ul>
 		</section>
+		<!-- <section id="hero">
+			<div class="hero-container">
+				<h1 class="hero-text">IP Analytics &<br />Marketing Specialists</h1>
+				
+				<div class="owl-carousel owl-theme">
+				    <div class="item one">
+
+				    </div>
+				    <div class="item two">
+				    	
+				    </div>
+				    <div class="item three">
+				    	
+				    </div>
+				</div>
+			</div>
+		</section> -->
+
 		<section id="hero">
 			<div class="hero-container">
-				<!-- <h1 class="hero-text">IP Analytics &<br />Marketing Specialists</h1> -->
+				<!-- <img class="desktop-hero" src="images/hero.jpg" alt="">
+				<img class="mobile-hero" src="images/hero-mobile.jpg" alt=""> -->
 				<img src="img/homepage_banner_text.svg" alt="">
+
+				<div class="owl-carousel owl-theme">
+				    <div class="item one"> </div>
+				    <div class="item two"> </div>
+				    <div class="item three"> </div>
+				</div>
 			</div>
 		</section>
+
 		<section id="login">
 			<div class="wrangler">
 				<div class="login-container">
@@ -53,8 +80,10 @@
 		<div class="content-container">
 			<section id="what-we-do">
 				<div class="left">
-					<h1 class="no-margin-bottom">What&nbsp;we&nbsp;do</h1>
-					<a href="madrid-notifier.html">OUR SERVICES</a>
+					<!-- <h1 class="no-margin-bottom">What&nbsp;we&nbsp;do</h1> -->
+					<img src="img/what_we_do.svg" alt="">
+					<!-- <a href="madrid-notifier.html">OUR SERVICES</a> -->
+					<button onclick="window.location.href='madrid-notifier.html'" class="services-btn">OUR SERVICES</button>
 					<hr class="mobile">
 				</div>
 				<div class="right">
@@ -62,33 +91,35 @@
 					We take advantage of big data, analytics, specialist knowledge of the IP field, cloud technology, expertise in software development and programming, and a keen eye for design and details to create solutions that simplify and improve the lives of WeCrest members, customers, and partners.</p>
 				</div>
 			</section>
-		</div>
-		<section id="identity">
-			<div class="identity-left">
-				<div class="tile-flip">
-					<div class="flip-container one" ontouchstart="this.classList.toggle('hover');">
-						<div class="flipper">
-							<div class="front">
-								<h1>Our identity</h1>
-								<button class="identity-btn">READ NOW</button>
-							</div>
-							<div class="back">
-								<p>The concept behind the ‘Summit’ logo for WeCrest was inspired by the action implied by the company’s name and objectives. To reach the top or summit of something is to ‘crest’ said object.</p>
+		
+			<section id="identity">
+				<div class="identity-left">
+					<div class="tile-flip">
+						<div class="flip-container one" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<!-- <h1>Our identity</h1> -->
+									<img src="img/our_identity.svg" alt="">
+									<button class="identity-btn">READ NOW</button>
+								</div>
+								<div class="back">
+									<p>The concept behind the ‘Summit’ logo for WeCrest was inspired by the action implied by the company’s name and objectives. To reach the top or summit of something is to ‘crest’ said object.</p>
 
-								<p>The peak of the ‘Summit’ logo breaks through the bounds of the circular border, going above and beyond, displaying WeCrest’s dedication to exemplary service. The steps in elevation are also a visual representation of the journey on which WeCrest guides its users through to their&nbsp;final&nbsp;goal.</p>
+									<p>The peak of the ‘Summit’ logo breaks through the bounds of the circular border, going above and beyond, displaying WeCrest’s dedication to exemplary service. The steps in elevation are also a visual representation of the journey on which WeCrest guides its users through to their&nbsp;final&nbsp;goal.</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="identity-right">
-				<p>We help you stand out from your competitors.
-				We create win-win opportunities, in which all
-				involved parties can synergize and profit.
-				</p>
-			</div>
-			<br />
-		</section>
+				<div class="identity-right">
+					<!-- <p>We help you stand out from your competitors.
+					We create win-win opportunities, in which all
+					involved parties can synergize and profit.
+					</p> -->
+				</div>
+				<br />
+			</section>
+		</div>
 	</div>
 	<section id="footer">
 		<div class="icons">
@@ -105,6 +136,7 @@
 	</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 	<script src="https://use.fontawesome.com/31f6331b17.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
 	
 </body>
