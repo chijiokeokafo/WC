@@ -325,7 +325,7 @@ li.services .dropdown-content {
 }
 #what-we-do .left button.services-btn:hover {
 	background-color: #fff;
-	color: #1b4677;
+	color: rgba( 0, 0, 0, 0.6 );
 }
 hr.mobile { display: none; }
 #what-we-do .right {
@@ -468,8 +468,12 @@ hr.mobile { display: none; }
 	background-size: cover;
 }
 .contact #what-we-do .left h1 { text-align: center; }
-.contact #what-we-do .right a { transition: all 0.15s ease-in-out; }
-.contact #what-we-do .right a:hover { color: #1b4677; }
+/*.contact #what-we-do .right a { transition: all 0.15s ease-in-out; }*/
+.contact #what-we-do .right a:hover { 
+	font-weight: bold; 
+	/*border-bottom: 1px solid #fff;*/
+	text-decoration: underline;
+}
 .contact #identity h4 {
 	font-family: 'Arial';
 	font-size: 30px;
@@ -1199,6 +1203,27 @@ hr.mobile { display: none; }
 }
 
 
+#signup-form .form-line .checkbox-container::-webkit-scrollbar-thumb {
+  background: #1b4677;
+  outline: 1px solid slategrey;
+  border-radius: 0px;
+}
 
 
+/* width */
+#signup-form .form-line .checkbox-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+#signup-form .form-line .checkbox-container::-webkit-scrollbar-track {
+    background: #fff; 
+    border-left: 2px solid #1b4677;
+}
+ 
+
+/* Handle on hover */
+/*#signup-form .form-line .checkbox-container::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}*/
 

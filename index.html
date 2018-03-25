@@ -138,6 +138,44 @@
 	<script src="https://use.fontawesome.com/31f6331b17.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 	<script src="js/main.js"></script>
+
+	<script>
+		$(document).ready(function(){
+		    $('.owl-carousel').owlCarousel({
+			    animateOut: 'fadeOut',
+			    animateIn: 'fadeIn',
+			    loop:true,
+			    margin:0,
+			    dots:true,
+			    nav:false,
+			    autoplay:true,
+			    autoplayTimeout:6000,
+			    autoplayHoverPause:false,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:1
+			        },
+			        1000:{
+			            items:1
+			        }
+			    }
+		    });
+
+		    $('.tile-flip').each(function(){
+		        var flipContainer = $(this);
+		        $('.flip-container', flipContainer).each(function(){
+		            $(this).click(function(){
+		                var wasOpen = $('.flipper', this).hasClass('flip');
+		                $('.flipper', flipContainer).removeClass('flip');
+		                if(!wasOpen) $('.flipper', this).addClass('flip');
+		            });
+		        });
+		    });
+		});
+	</script>
 	
 </body>
 </html>

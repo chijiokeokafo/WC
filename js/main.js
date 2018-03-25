@@ -1,41 +1,6 @@
 $(document).ready(function(){
-
-  $('.owl-carousel').owlCarousel({
-    animateOut: 'fadeOut',
-    animateIn: 'fadeIn',
-    loop:true,
-    margin:0,
-    dots:true,
-    nav:false,
-    autoplay:true,
-    autoplayTimeout:6000,
-    autoplayHoverPause:false,
-    responsive:{
-      0:{
-          items:1
-      },
-      600:{
-          items:1
-      },
-      1000:{
-          items:1
-      }
-    }
-  });
-
   $("#mobile-nav-button").click(function(e) {
       $(".nav-container").toggleClass("nav-open"); 
-  });
-
-  $('.tile-flip').each(function(){
-    var flipContainer = $(this);
-    $('.flip-container', flipContainer).each(function(){
-      $(this).click(function(){
-        var wasOpen = $('.flipper', this).hasClass('flip');
-        $('.flipper', flipContainer).removeClass('flip');
-        if(!wasOpen) $('.flipper', this).addClass('flip');
-      });
-    });
   });
 });
 
