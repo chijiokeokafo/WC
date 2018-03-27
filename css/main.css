@@ -40,8 +40,8 @@ input:-moz-placeholder {
 	margin-bottom: 4px;
 }
 #nav img {
-	width: 180px;
-    margin: 10px 50px;
+	width: 144px;
+    margin: 13px 50px 10px;
 }
 .nav-container {
 	align-items: center;
@@ -330,7 +330,7 @@ li.services .dropdown-content {
 hr.mobile { display: none; }
 #what-we-do .right {
 	width: 50%;
-	border-left: 4px solid #fff;
+	/*border-left: 4px solid #fff;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -539,10 +539,11 @@ hr.mobile { display: none; }
 	height: 30px;
 	border: 2px solid #1b4677;
 	padding-left: 5px;
+	font-family: 'Arial';
 }
 .form-line label {
 	font-family: 'Arial';
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: bold;
 	color: #1b4677; 
 }
@@ -551,6 +552,7 @@ hr.mobile { display: none; }
     min-height: 110px;
     border: 2px solid #1b4677;
     padding-left: 5px;
+    font-family: 'Arial';
 }
 .red { color: #ff0000; }
 
@@ -610,10 +612,11 @@ hr.mobile { display: none; }
 	width: 520px;
 	height: 30px;
 	border: 2px solid #1b4677;
+	font-family: 'Arial';
 }
 #signup-form .form-line label {
 	font-family: 'Arial';
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: bold;
 	color: #1b4677; 
 }
@@ -675,7 +678,7 @@ hr.mobile { display: none; }
 	width: 44%;
 }
 
-.red.mobile { display: none; }
+label.mobile { display: none; }
 
 /*FOOTER*/
 
