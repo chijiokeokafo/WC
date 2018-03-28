@@ -1121,7 +1121,7 @@ label.mobile { display: none; }
 	.signup #hero img { width: 90%; }
 	#signup-form { width: 95%; }
 	#signup-form .form-line label { font-size: 16px; }
-	.signup .content-container { background-position: 46.75% center; }
+	.signup .content-container { background-position: 13% center; }
 	#signup-form form .form-line { flex-direction: column; }
 	#signup-form .form-line input { width: initial; }
 	#signup-form form .form-line.agreement input { width: 17px; }
