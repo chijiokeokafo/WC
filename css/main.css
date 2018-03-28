@@ -41,7 +41,7 @@ input:-moz-placeholder {
 }
 #nav img {
 	width: 144px;
-    margin: 13px 50px 10px;
+    margin: 11px 50px 10px;
 }
 .nav-container {
 	align-items: center;
@@ -200,6 +200,24 @@ li.services .dropdown-content {
 }
 #hero .item.three {
 	background: url("../img/mtn-3.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item.four {
+	background: url("../img/wave-1.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#hero .item.five {
+	background: url("../img/wave-2.jpg");
+	background-repeat: no-repeat;
+	background-position: center 30%;
+	background-size: cover;
+}
+#hero .item.six {
+	background: url("../img/wave-3.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -419,14 +437,14 @@ hr.mobile { display: none; }
 
 /*NEWS*/
 
-.news #hero { 
+/*.news #hero { 
 	width: 100%; 
 	background: url("../img/hero-news.jpg") no-repeat center center;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
 	height:  380px;
-}
+}*/
 
 .news .hero-container img {
 	margin: 0 auto;
@@ -572,14 +590,14 @@ hr.mobile { display: none; }
 
 /*SIGNUP PAGE*/
 
-.signup #hero {
+/*.signup #hero {
 	background: url("../img/mtn-1.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
     display: flex;
     justify-content: center;
-}
+}*/
 .signup #hero img {
 	width: 450px;
 	align-self: center;
