@@ -23,6 +23,13 @@ $(document).ready(function(){
         1000:{
             items:1
         }
+    },
+    onInitialize : function(element){
+        $('.owl-carousel').children().sort(function(){
+            return Math.round(Math.random()) - 0.5;
+        }).each(function(){
+            $(this).appendTo($('.owl-carousel'));
+        });
     }
   });
 });

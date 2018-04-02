@@ -416,7 +416,7 @@ hr.mobile { display: none; }
 .identity-right {
 	width: 50%;
 	height: 528px;
-	background: url("../img/identity-right.jpg") no-repeat center center;
+	background: url("../img/identity-right-1.jpg") no-repeat center center;
 	background-size: cover;
 	display: flex;
 	align-items: center;
@@ -424,7 +424,7 @@ hr.mobile { display: none; }
     box-sizing: border-box;
 	border-left: 2px solid #fff;
 }
-.identity-right p {
+/*.identity-right p {
 	border: 3px solid #fff;
 	border-left: none;
 	border-right: none; 
@@ -433,6 +433,9 @@ hr.mobile { display: none; }
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	font-size: 24px;
 	color: #fff;
+}*/
+.identity-right img {
+	width: 90%;
 }
 
 /*NEWS*/
@@ -466,8 +469,8 @@ hr.mobile { display: none; }
 
 .contact #hero { 
 	width: 100%; 
-	background: url("../img/hero-contact.jpg") no-repeat center center;
-	background-size: cover;
+	/*background: url("../img/hero-contact.jpg") no-repeat center center;*/
+	/*background-size: cover;*/
 	padding: 90px 0;
 }
 .contact .hero-container {
@@ -889,6 +892,36 @@ label.mobile { display: none; }
 
 
 
+/**********MADRID NOTIFIER***********/
+.madrid.content-container {
+	width: 100%;
+	max-width: none;
+}
+section.one,
+section.two, 
+section.three, 
+section.four {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+}
+section.one { background-image: url(../img/madrid-bg-1.jpg); }
+section.two { background-image: url(../img/madrid-bg-2.jpg); }
+section.three { background-image: url(../img/madrid-bg-3.jpg); }
+section.four { background-image: url(../img/madrid-bg-4.jpg); }
+
+.contact-heading p {
+	color: #1b4677;
+	font-family: 'Arial';
+	font-size: 18px;
+}
+
+
+
+
+
 
 
 
@@ -1040,6 +1073,7 @@ label.mobile { display: none; }
 		margin-bottom: 20px;
 		font-size: 20px;
 	}
+	#what-we-do .left img { width: 310px; }
 	hr.mobile {
 		display: block;
 		width: 280px;
@@ -1058,6 +1092,7 @@ label.mobile { display: none; }
 		height: 20px;
 	}
 	#identity .identity-left button.identity-btn { width: 55%; }
+	.flipper .front img { width: 310px; }
 	.home #what-we-do .left button.services-btn {
 		margin-bottom: 30px;
 	}
@@ -1148,22 +1183,6 @@ label.mobile { display: none; }
 		margin: 40px auto 20px auto;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 750px) {
 
