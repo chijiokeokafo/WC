@@ -150,19 +150,30 @@ li.services .dropdown-content {
 	/*width: 100%; 
 	background: url("../img/hero-desktop.jpg") no-repeat center center;
 	background-size: cover;*/
-	/*padding: 100px 0;
-	display: flex;
-	justify-content: center;*/
+	/*padding: 100px 0;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
 }
 .hero-container {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	-webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .hero-container img { 
 	position: absolute;
 	z-index: 100;
 	width: 700px;
-	margin: 110px auto 0;
+	align-self: center;
+	/*margin: 110px auto 0;*/
 	/*background-color: rgba( 0, 0, 0, 0.26 ); */
 	/*padding: 10px;*/
 }
@@ -512,10 +523,10 @@ hr.mobile { display: none; }
 .contact #what-we-do .right {
 
 }
-.contact #identity .identity-left { 
+/*.contact #identity .identity-left { 
 	color: #fff; 
 	display: flex;
-}
+}*/
 .address {
 	display: flex;
 	flex-direction: row;
@@ -526,14 +537,14 @@ hr.mobile { display: none; }
 	letter-spacing: 2px;
 	font-family: 'Arial';
 }
-.contact #identity .contact-right { 
+/*.contact .contact-right { 
 	width: 780px;
 	height: 528px;
 	display: flex;
 	flex-direction: column;
     margin: 0 auto;
 }
-#identity .contact-right .contact-heading {
+.contact-right .contact-heading {
 	width: 100%;
 	border-bottom: 2px solid #1b4677;
 }
@@ -567,9 +578,9 @@ hr.mobile { display: none; }
 	font-size: 16px;
 	font-weight: bold;
 	color: #1b4677; 
-}
+}*/
 .form-line textarea {
-	width: 519px;
+	width: 515px;
     min-height: 110px;
     border: 2px solid #1b4677;
     padding-left: 5px;
@@ -641,11 +652,11 @@ hr.mobile { display: none; }
 	font-weight: bold;
 	color: #1b4677; 
 }
-#signup-form .form-line textarea {
+/*#signup-form .form-line textarea {
 	width: 60%;
     min-height: 110px;
     border: 2px solid #1b4677;
-}
+}*/
 #signup-form .red { color: #ff0000; }
 #signup-form form .form-line.agreement {
 	display: flex;
@@ -893,9 +904,37 @@ label.mobile { display: none; }
 
 
 /**********MADRID NOTIFIER***********/
-.madrid.content-container {
+.madrid .news .hero-container img {
+	width: 490px;
+}
+.madrid .content-container {
 	width: 100%;
 	max-width: none;
+	position: relative;
+	
+}
+.madrid .content-container section {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding: 20px;
+	box-sizing: border-box;
+}
+.madrid .content-container .madrid-copy {
+	/*position: relative;*/
+	/*bottom: 15px;*/
+	/*right: 15px;*/
+	width: 50%;
+	opacity: 0;
+	/*height: 200px;*/
+}
+.madrid .content-container .madrid-copy h1 {
+	font-size: 30px;
+	font-family: 'Didot', serif;
+}
+.madrid .content-container .madrid-copy p {
+	font-family: 'Arial', sans-serif;
+	font-size: 21px;
 }
 section.one,
 section.two, 
@@ -917,6 +956,11 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 	font-family: 'Arial';
 	font-size: 18px;
 }
+
+.madrid #signup-form {
+	margin-bottom: 40px;
+}
+.madrid #signup-form .form-line .checkbox-container { width: 522px; }
 
 
 
@@ -1040,13 +1084,26 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 	.mobile-close { display: block; }
 	/*.container { margin-top: -20px; }*/
 
+	.hero-container {
+		display: -webkit-box; 
+		display: -moz-box;       
+		display: -ms-flexbox; 
+		display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+	    align-items: center;
+	    -webkit-justify-content: center;
+	    justify-content: center;
+	    /*flex-direction: column;*/
+	}
+
 	.hero-container img {
-	    position: absolute;
 	    z-index: 100;
 	    width: 90%;
-	    margin: 150px auto 0;
-	    /* background-color: rgba( 0, 0, 0, 0.26 ); */
-	    /* padding: 10px; */
+	    /*margin: 150px auto 0;*/
+	    margin: 0;
+	    -webkit-align-self: center;
+	    align-self: center;
 	}
 
 	#hero h1 { font-size: 50px; }
@@ -1097,8 +1154,8 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 		margin-bottom: 30px;
 	}
 	.home .content-container { background-size: 90%; }
-	.home #what-we-do { height: 700px; }
-	.home #what-we-do .right { height: 400px; }
+	.home #what-we-do { height: auto; }
+	.home #what-we-do .right { height: auto; }
 	#what-we-do .right p { 
 		margin-top: 0; 
 		/*line-height: 23px;*/
@@ -1153,10 +1210,13 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 	
 	/*SIGNUP*/
 	
-	.signup #hero img { width: 90%; }
+	.signup #hero img { width: 66%; }
 	#signup-form { width: 95%; }
 	#signup-form .form-line label { font-size: 16px; }
-	.signup .content-container { background-position: 13% center; }
+	.signup .content-container { 
+		background-position: 13% -80px; 
+		background-color: #d5d7d4;
+	}
 	#signup-form form .form-line { flex-direction: column; }
 	#signup-form .form-line input { width: initial; }
 	#signup-form form .form-line.agreement input { width: 17px; }
@@ -1185,11 +1245,45 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 }
 
 @media only screen and (max-width: 750px) {
+	_:default:not(:root:root), .hero-container img { margin: 170px 19px 0; }
+
+	_:default:not(:root:root), .news #hero .hero-container img { margin: 170px 19px 0; }
+
+	_:default:not(:root:root), .signup #hero .hero-container img { margin: 170px 64px 0; }
+	
+	@media not all and (min-resolution:.001dpcm)
+	{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+
+	    .hero-container img { margin: 0; }
+
+	    .news #hero .hero-container img { margin: 0; }
+
+	    .signup #hero .hero-container img { margin: 0; }
+	}}
 
 }
 
-@media only screen and (max-width: 450px) {
-	
+@media only screen and (max-width: 350px) {
+	#what-we-do .left img,
+	.flipper .front img {
+	    width: 270px;
+	}
+	#what-we-do .right {
+		height: auto;
+		overflow-y: hidden;
+	}
+
+	.contact #what-we-do .left img {
+		margin-bottom: 15px;
+	}
+
+	.login-container input {
+	    width: 90px;
+	}
+
+
+	#footer { margin-top: 10px; }
+	#footer .footer-details { font-size: 11px; }
 }
 
 
@@ -1210,7 +1304,11 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
     background: #fff; 
     border-left: 2px solid #1b4677;
 }
- 
+
+
+
+
+
 
 /* Handle on hover */
 /*#signup-form .form-line .checkbox-container::-webkit-scrollbar-thumb:hover {
