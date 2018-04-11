@@ -1242,6 +1242,9 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 		line-height: 17px;
 		margin: 40px auto 20px auto;
 	}
+
+	/*MADRID*/
+	.madrid .news .hero-container img { width: 280px; }
 }
 
 @media only screen and (max-width: 750px) {
