@@ -1245,6 +1245,31 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 
 	/*MADRID*/
 	.madrid .news .hero-container img { width: 280px; }
+
+	.madrid #signup-form .form-line .checkbox-container { width: initial; }
+
+	.madrid .contact-heading p {
+		font-size: 16px;
+		width: 90%;
+		margin: 0 auto 30px;
+	}
+
+	section.one,
+	section.two,
+	section.three,
+	section.four { height: 220px; }
+
+	.madrid .content-container .madrid-copy {
+		width: 100%;
+		padding: 0 10px;
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+		border-bottom: 2px solid green;
+	}
+
+	.madrid .content-container .madrid-copy h1 { font-size: 20px; }
+	.madrid .content-container .madrid-copy p { font-size: 16px; }
 }
 
 @media only screen and (max-width: 750px) {
