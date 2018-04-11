@@ -198,37 +198,37 @@ li.services .dropdown-content {
 }
 #hero img.mobile-hero { display: none; }*/
 #hero .item.one {
-	background: url("../img/mtn-1.jpg");
+	background: url("../img/marketing_legal_services.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
 #hero .item.two {
-	background: url("../img/mtn-2.jpg");
+	background: url("../img/marketing_law_firms.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
 #hero .item.three {
-	background: url("../img/mtn-3.jpg");
+	background: url("../img/IP_law_firm_marketing_services.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
 #hero .item.four {
-	background: url("../img/wave-1.jpg");
+	background: url("../img/IP_filing_analysis_analytics.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
 #hero .item.five {
-	background: url("../img/wave-2.jpg");
+	background: url("../img/trademark_analytics.jpg");
 	background-repeat: no-repeat;
 	background-position: center 30%;
 	background-size: cover;
 }
 #hero .item.six {
-	background: url("../img/wave-3.jpg");
+	background: url("../img/IP_law_firm_promotion_software.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -279,7 +279,7 @@ li.services .dropdown-content {
 	max-width: 1300px;
 	display: block;
 	margin: 0 auto 35px auto;
-	background: url("../img/globe.png") no-repeat 12% 5%;
+	background: url("../img/global_trademark_registration_market_analytics.png") no-repeat 12% 5%;
 	background-size: 454px 285px;
 }
 #what-we-do {
@@ -388,7 +388,7 @@ hr.mobile { display: none; }
 	max-width: 1300px;
 }
 .identity-left {
-	background: url("../img/identity-left.jpg") no-repeat center center;
+	background: url("../img/WeCrest_logo_corporate_identity.jpg") no-repeat center center;
 	width: 50%;
 	height: 528px;
 	background-size: cover;
@@ -502,7 +502,7 @@ hr.mobile { display: none; }
 	max-width: 1300px;
 	display: block;
 	margin: 0 auto 35px auto;
-	background: url("../img/contact.jpg") no-repeat 5% 15%;
+	background: url("../img/trademark_madrid_marketing_analytics.jpg") no-repeat 5% 15%;
 	background-size: cover;
 }
 .contact #what-we-do .left h1 { text-align: center; }
@@ -623,7 +623,7 @@ hr.mobile { display: none; }
 	max-width: 1300px;
 	display: block;
 	margin: 0 auto 35px auto;
-	background: url("../img/signup.jpg") no-repeat 5% 40%;
+	background: url("../img/ip_trademark_analytics_free_account_create.jpg") no-repeat 5% 40%;
 	background-size: cover;
 }
 #signup-form {
@@ -936,6 +936,7 @@ label.mobile { display: none; }
 	font-family: 'Arial', sans-serif;
 	font-size: 21px;
 }
+.madrid .content-container .madrid-copy-mobile { display: none; }
 section.one,
 section.two, 
 section.three, 
@@ -1250,26 +1251,47 @@ section.four { background-image: url(../img/madrid-bg-4.jpg); }
 
 	.madrid .contact-heading p {
 		font-size: 16px;
-		width: 90%;
+		/*width: 90%;*/
 		margin: 0 auto 30px;
 	}
 
 	section.one,
 	section.two,
 	section.three,
-	section.four { height: 220px; }
+	section.four { 
+		height: 220px; 
+		/*margin-bottom: 200px;*/
+	}
 
 	.madrid .content-container .madrid-copy {
 		width: 100%;
 		padding: 0 10px;
 		position: relative;
+		top: 220px;
 		display: block;
 		margin-bottom: 20px;
-		border-bottom: 2px solid green;
+		/*border-bottom: 2px solid green;*/
 	}
 
 	.madrid .content-container .madrid-copy h1 { font-size: 20px; }
 	.madrid .content-container .madrid-copy p { font-size: 16px; }
+
+	.madrid .content-container .madrid-copy-mobile { 
+		display: block;
+		opacity: 0; 
+		width: 95%;
+		margin: 0 auto;
+	}
+	.madrid .content-container .madrid-copy { display: none; }
+
+	.madrid .content-container .madrid-copy-mobile h1 {
+		font-family: 'Didot';
+		font-size: 22px;
+	}
+	.madrid .content-container .madrid-copy-mobile p { 
+		font-size: 14px; 
+		line-height: 24px;
+	}
 }
 
 @media only screen and (max-width: 750px) {
